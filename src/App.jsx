@@ -5,6 +5,7 @@ import CommentsList from "./pages/comments";
 import RecipeDetails from "./pages/recipe-details";
 import NotFoundPage from "./pages/not-found";
 import Layout from "./components/layout";
+import ReactHookForm from "./pages/react-hook-form-example";
 
 function CustomRoutes() {
   const element = useRoutes([
@@ -15,6 +16,7 @@ function CustomRoutes() {
         { path: "recipes", element: <RecipeList /> },
         { path: "comments", element: <CommentsList /> },
         { path: "recipes/:id", element: <RecipeDetails /> },
+        { path: "react-hook-form", element: <ReactHookForm /> },
       ],
     },
     { path: "*", element: <NotFoundPage /> },
@@ -27,7 +29,7 @@ function App() {
 
   return (
     <div>
-      <h1>React routing, Custom hooks and more</h1>
+      {/*<h1>React routing, Custom hooks and more</h1>
 
       <div>
         <Link to={"/home/recipes"}>Alt Recipes</Link>
@@ -43,7 +45,7 @@ function App() {
         style={{ backgroundColor: "black", color: "white" }}
       >
         Comments
-      </button>
+      </button>*/}
       {/*<Routes>
         <Route path="/" element={<Layout />}>
           <Route path="recipes" element={<RecipeList />} />
